@@ -11,7 +11,7 @@ if %errorlevel% neq 0 (
 
 title Checking libraries...
 echo Checking 'customtkinter' (1/4)
-python -c "import customtkinter" > nul 2>&1
+python -c "pkg_resources" > nul 2>&1
 if %errorlevel% neq 0 (
     echo Installing customtkinter...
     python -m pip install customtkinter > nul
